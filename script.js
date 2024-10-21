@@ -14,28 +14,16 @@ const generatePassword = (length, options) => {
     if(options.includeNumbers) charset += numbers;
     if(options.includeSpecialChars) charset += specialChars;
 
-    if(charset.length === 0) return '';
+    if (charset === '') {
+        throw new Error('At least one character type must be selected.');
+    }
 
-    // TODO: Generate the password based on the selected criteria
     let password = '';
-    for(let i = 0; i < length; i++) {
+    for (let i = 0; i < length; i++) {
         const randomIndex = Math.floor(Math.random() * charset.length);
         password += charset[randomIndex];
     }
 
     return password;
 };
-// TODO: Add event listener to the button to call generatePassword and display the output
-
-document.getElementById('generateBtn').addEventListener('click', () => {
-    const length = parseInt(document.getElementById('length').value, 10);
-    const options = {
-        includeLowercase: document.getElementById('includeLowercase').checked,
-        includeUppercase: document.getElementById('includeUppercase').checked,
-        includeNumbers: document.getElementById('includeNumbers').checked,
-        includeSpecialChars: document.getElementById('includeSpecialChars').checked,
-    };
-    const password = generatePassword(length, options);
-    document.getElementById('passwordOutput').textContent = password;
-});
 // BONUS: Implement the copy to clipboard functionality
