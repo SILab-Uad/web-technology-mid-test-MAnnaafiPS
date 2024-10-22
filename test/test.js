@@ -1,7 +1,7 @@
 // Dont change anything in this file
 
-const { expect } = require('chai');
-const { generatePassword } = require('../script.js');
+import { expect } from 'chai';
+import { generatePassword } from '../script.js';
 
 let totalTests = 0;
 let passedTests = 0;

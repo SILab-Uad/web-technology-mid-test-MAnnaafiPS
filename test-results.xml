@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="0.011" tests="6" failures="0">
-  <testsuite name="Root Suite" timestamp="2024-10-21T16:31:49" tests="0" time="0.000" failures="0">
+<testsuites name="Mocha Tests" time="0.010" tests="6" failures="0">
+  <testsuite name="Root Suite" timestamp="2024-10-22T02:17:57" tests="0" time="0.000" failures="0">
   </testsuite>
-  <testsuite name="Password Generator Tests" timestamp="2024-10-21T16:31:49" tests="6" file="C:\Users\annaa\Documents\web-technology-mid-test-MAnnaafiPS\test\test.js" time="0.008" failures="0">
-    <testcase name="Password Generator Tests should generate a password of the specified length" time="0.002" classname="should generate a password of the specified length">
+  <testsuite name="Password Generator Tests" timestamp="2024-10-22T02:17:57" tests="6" file="C:\Users\annaa\Documents\web-technology-mid-test-MAnnaafiPS\test\test.js" time="0.008" failures="0">
+    <testcase name="Password Generator Tests should generate a password of the specified length" time="0.003" classname="should generate a password of the specified length">
     </testcase>
     <testcase name="Password Generator Tests should contain uppercase letters if selected" time="0.000" classname="should contain uppercase letters if selected">
     </testcase>
